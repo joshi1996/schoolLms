@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/headerlayout"
+            android:id="@+id/header_support">
+        </include>
+
+        <TextView
+            android:id="@+id/choose_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:background="@drawable/trans_background"
+            android:text="@string/choose_upload_option_s"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margin_5"
+            android:paddingStart="@dimen/margin_5"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry"
+            app:drawableRightCompat="@drawable/ic_arrow_down">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/upload_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:weightSum="10"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    tools:ignore="DisableBaselineAlignment,NestedWeights">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:weightSum="5"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+                            <ImageView
+                                android:id="@+id/camera_upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/camera_icon"
+                                android:padding="8dp"
+                                android:contentDescription="@string/app_name"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/take_photo"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/textsize_16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:weightSum="5"
+                        android:orientation="horizontal"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+                            <ImageView
+                                android:id="@+id/gallery_upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gallery_icon"
+                                android:padding="8dp"
+                                android:contentDescription="@string/app_name"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/upload_photo"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/textsize_16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/upload_assessment"
+                        android:layout_width="@dimen/margin_120"
+                        android:layout_height="@dimen/margin_120"
+                        android:background="@drawable/ic_assess_upload"
+                        android:contentDescription="@string/app_name">
+                    </ImageView>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6">
+
+                    <EditText
+                        android:id="@+id/upload_photo_text_assess"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/trans_background"
+                        android:scrollbars="vertical"
+                        android:hint="Type something....."
+                        android:textColorHint="@color/black"
+                        android:gravity="start"
+                        android:paddingStart="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_16sp"
+                        android:layout_margin="@dimen/margin_5"
+                        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields">
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:id="@+id/upload_image_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/youtube_live_back_draw"
+                        android:layout_margin="@dimen/margin_10"
+                        android:text="@string/upload_assessment"
+                        android:textSize="@dimen/textsize_16sp"
+                        android:textColor="@color/white">
+
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black">
+        </View>
+
+    </LinearLayout>
+
+</layout>

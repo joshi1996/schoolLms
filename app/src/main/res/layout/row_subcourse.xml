@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subject_background"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                card_view:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/iv_categoryimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:paddingStart="@dimen/margin_5"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_below="@+id/iv_categoryimage"
+                    card_view:ignore="RtlSymmetry" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_title"
+                    card_view:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin_40"
+                            android:layout_height="@dimen/margin_40"
+                            android:src="@drawable/video_icon"
+                            android:padding="8dp"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_50"
+                            android:textSize="@dimen/textsize_16sp"
+                            android:textColor="@color/black"
+                            android:paddingStart="@dimen/margin_5"
+                            android:text=""
+                            android:gravity="center_vertical"
+                            card_view:ignore="RtlSymmetry" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <data></data>
+
+</layout>

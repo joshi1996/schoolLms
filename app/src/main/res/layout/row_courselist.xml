@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trans_background"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/iv_categoryimage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name" />
+
+
+        <ImageView
+            android:id="@+id/class_icon"
+            android:layout_width="@dimen/margin_30"
+            android:layout_height="@dimen/margin_30"
+            android:src="@drawable/class_icon"
+            android:layout_below="@id/iv_categoryimage"
+            android:contentDescription="@string/app_name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:paddingStart="@dimen/margin_5"
+            android:id="@+id/tv_title"
+            android:layout_toEndOf="@id/class_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_30"
+            android:textSize="@dimen/textsize_16sp"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_below="@+id/iv_categoryimage"
+            card_view:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/rate_image"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size_30"
+            android:src="@drawable/new_rate_icon"
+            android:padding="@dimen/margin_5"
+            android:layout_below="@id/iv_categoryimage"
+            android:layout_toLeftOf="@id/rating_us"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_30"
+            android:textSize="@dimen/textsize_16sp"
+            android:textColor="@color/black"
+            android:gravity="start|center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_categoryimage"
+            android:paddingStart="3dp"
+            android:id="@+id/rating_us">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <data></data>
+
+</layout>

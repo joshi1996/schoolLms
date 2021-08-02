@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ll_header"
+            layout="@layout/headerlayout" />
+
+        <!--<RelativeLayout
+            android:id="@+id/ll_main_live"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#e4e4e4"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ll_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_videframe"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/marwar"
+                        android:scaleType="fitXY"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_toLeftOf="@id/ll_paidfree"
+                        android:layout_toRightOf="@+id/iv_videframe"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_title_live"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:textStyle="bold"
+                            android:text="Teacher 1" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_date_live"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/textcolor"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="3dp"
+                            android:textStyle="bold"
+                            android:text="23/11/2020  02:59:00" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_paidfree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/splash_color"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:paddingLeft="@dimen/margin_5"
+                            android:id="@+id/tv_freeorpaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Play" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:src="@drawable/ic_play"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_main_live_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_1"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#e4e4e4"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ll_parent_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_videframe_1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/marwar"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_toLeftOf="@id/ll_paidfree_1"
+                        android:layout_toRightOf="@+id/iv_videframe_1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_title_live_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:textStyle="bold"
+                            android:text="Teacher 2" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_date_live_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/textcolor"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="3dp"
+                            android:textStyle="bold"
+                            android:text="23/11/2020  04:59:00" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_paidfree_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/splash_color"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:paddingLeft="@dimen/margin_5"
+                            android:id="@+id/tv_freeorpaid_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Play" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:src="@drawable/ic_play"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_item_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_10" />
+
+
+    </LinearLayout>
+
+</layout>
